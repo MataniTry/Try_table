@@ -1,5 +1,5 @@
 import React from "react";
-import table from './Table.module.css'
+import table from "./Table.module.css"
 import Table_header from "./header/table_header";
 import Elem from "./element/element";
 import Add_user from "../Buttons/Add_user";
@@ -8,7 +8,6 @@ import Delete_user from "../Buttons/Delete_user";
 const Table = () => {
     return (
         <div className={table.table}>
-
 
             <table>
 
@@ -19,11 +18,12 @@ const Table = () => {
 
             </table>
 
-            <Add_user />
+            <Add_user name = 'Добавить ученика'/>
             <Delete_user />
+
 
         </div>
     )
 }
 
-export default Table
+export default Table;

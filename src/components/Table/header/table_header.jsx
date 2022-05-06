@@ -1,6 +1,5 @@
 import React from "react";
-import table from './table_header.module.css'
-
+import table from "./table_header.module.css"
 const Table_header = () => {
     return (
         <tr>

@@ -3,11 +3,13 @@
     background-color: aquamarine;
     text-align: center;
 
-
 }
 
-.item{
+.item a{
     text-decoration: none;
     color: black;
+}
 
+.item a.activeLink{
+    color: red;
 }
