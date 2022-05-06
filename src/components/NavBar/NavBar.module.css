@@ -1,0 +1,13 @@
+.nav{
+    grid-area: n;
+    background-color: aquamarine;
+    text-align: center;
+
+
+}
+
+.item{
+    text-decoration: none;
+    color: black;
+
+}
