@@ -6,7 +6,7 @@ const Content = () => {
     return(
 
     <div className={content.content}>
-        Main content
+        User1
     </div>
 
     )
