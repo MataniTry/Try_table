@@ -6,26 +6,25 @@ import {NavLink} from "react-router-dom";
 
 
 const NavBar = () => {
-    return(
-    <nav className = {Nav.nav}>
-        <div className={Nav.item}>
-            <NavLink to = '/group1' activeClassName = {Nav.activeLink} > Group 1 </NavLink>
-        </div>
-        <div className={Nav.item}>
-            <NavLink to = '/group2' activeClassName = {Nav.activeLink} > Group 2 </NavLink>
-        </div>
-        <div className={Nav.item}>
-            <NavLink to = '/group3' activeClassName = {Nav.activeLink} > Group 3 </NavLink>
-        </div>
-        <div className={Nav.item}>
-            <NavLink to = '/group4' activeClassName = {Nav.activeLink} > Group 4 </NavLink>
-        </div>
-        <Add_group />
-        <Del_group />
-    </nav>
+    return (
+        <nav className={Nav.nav}>
+            <div className={Nav.item}>
+                <NavLink to='/group1' style={({isActive}) => ({color: isActive ? "red" : "black"})}> Group 1 </NavLink>
+            </div>
+            <div className={Nav.item}>
+                <NavLink to='/group2' style={({isActive}) => ({color: isActive ? "red" : "black"})}> Group 2 </NavLink>
+            </div>
+            <div className={Nav.item}>
+                <NavLink to='/group3' style={({isActive}) => ({color: isActive ? "red" : "black"})}> Group 3 </NavLink>
+            </div>
+            <div className={Nav.item}>
+                <NavLink to='/group4' style={({isActive}) => ({color: isActive ? "red" : "black"})}> Group 4 </NavLink>
+            </div>
+            <Add_group/>
+            <Del_group/>
+        </nav>
     )
 }
-
 
 
 export default NavBar;
